@@ -23,11 +23,28 @@
     list-style: none;
     color: #dddddd;
   }
+  .top-nav .white--nav:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    border-bottom: 2px solid #dddddd;
+  }
   .top-nav .purple--nav {
     font-size: 24px;
     text-decoration: none;
     list-style: none;
     color: #757085;
+  }
+  .top-nav .purple--nav:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    border-bottom: 2px solid #757085;
+  }
+  body {
+    height: 100%;
   }
   .bg-color .square1 {
     position: absolute;
@@ -77,8 +94,269 @@
     left: 120px;
     font-size: 28px;
   }
+  .title p .name-bg {
+    background-color: #c3bbde;
+    opacity: 0.5;
+  }
   .title p .big {
     font-size: 38px;
+  }
+  .intro {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    width: 40%;
+    display: block;
+    margin: 50px;
+    z-index: 99;
+  }
+  .intro-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 60px;
+  }
+  .intro-icon .google {
+    width: 50px;
+    height: 50px;
+  }
+  .intro-icon .discord {
+    width: 50px;
+    height: 50px;
+  }
+  .intro-icon .linkedin {
+    width: 50px;
+    height: 50px;
+  }
+  .intro-icon .github {
+    width: 50px;
+    height: 50px;
+  }
+  .intro-text {
+    color: #757085;
+    font-size: 28px;
+  }
+  .aboutMe {
+    width: 100%;
+    position: relative;
+    bottom: 110vh;
+  }
+  .aboutMe .bg-color2 {
+    position: relative;
+    bottom: 200px;
+    margin: 0;
+  }
+  .aboutMe .bg-color2 .circle3 {
+    position: absolute;
+    left: -100px;
+    width: 532px;
+    height: 832px;
+    background-color: #757085;
+    border-radius: 50%;
+    -webkit-transform: rotate(58deg);
+            transform: rotate(58deg);
+    z-index: -99;
+  }
+  .aboutMe .bg-color2 .circle4 {
+    position: absolute;
+    top: 180px;
+    left: 250px;
+    width: 322px;
+    height: 605px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-transform: rotate(39.5deg);
+            transform: rotate(39.5deg);
+    z-index: -99;
+  }
+  .aboutMe h2 {
+    position: relative;
+    top: 100px;
+    margin: 0 450px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    border-bottom: 3px solid #757085;
+  }
+  .aboutMe .about {
+    margin-top: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
+  .aboutMe .about img {
+    width: 400px;
+    height: 400px;
+  }
+  .aboutMe .about p {
+    color: #757085;
+    font-size: 24px;
+    width: 50%;
+  }
+  .aboutMe .whatlike {
+    margin-top: 100px;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutMe .whatlike img {
+    width: 400px;
+    height: 400px;
+  }
+  .aboutMe .whatlike-contents h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    border-bottom: 1px solid #757085;
+    width: 550px;
+    padding-left: 200px;
+  }
+  .aboutMe .whatlike-contents p {
+    color: #757085;
+    font-size: 24px;
+    margin: 80px 150px;
+  }
+  .aboutMe .skills {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 430px;
+    background-color: #757085;
+  }
+  .aboutMe .skills h3 {
+    padding-top: 30px;
+    color: #dddddd;
+    font-size: 40px;
+    font-weight: lighter;
+    border-bottom: 1px solid #dddddd;
+    width: 550px;
+    padding-left: 200px;
+  }
+  .aboutMe .skills-imgs {
+    margin: 0% 25%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutMe .skills-imgs .git-hub {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutMe .skills-imgs .nextjs {
+    padding-top: 15px;
+  }
+  .portfolio {
+    position: relative;
+    bottom: 90vh;
+    height: 100vh;
+  }
+  .portfolio h2 {
+    margin: 0 450px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    border-bottom: 3px solid #757085;
+  }
+  .resume {
+    position: relative;
+    bottom: 90vh;
+    height: 100vh;
+  }
+  .resume h2 {
+    margin: 0 450px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    border-bottom: 3px solid #757085;
+  }
+  .contacts {
+    position: relative;
+    height: 60vh;
+  }
+  .contacts h2 {
+    margin: 0 450px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    border-bottom: 3px solid #757085;
+  }
+  .contacts-icon {
+    margin: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 60px;
+  }
+  .contacts-icon-google {
+    width: 50px;
+    height: 50px;
+  }
+  .contacts-icon-discord {
+    width: 50px;
+    height: 50px;
+  }
+  .contacts-icon-linkedin {
+    width: 50px;
+    height: 50px;
+  }
+  .contacts-icon-github {
+    width: 50px;
+    height: 50px;
+  }
+  footer {
+    position: relative;
+  }
+  footer .square2 {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background-color: #757085;
+    z-index: -99;
+  }
+  footer .circle5 {
+    position: absolute;
+    bottom: 300px;
+    right: 0px;
+    width: 600px;
+    height: 373px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #757085;
+    overflow: hidden;
+  }
+  footer .circle6 {
+    position: absolute;
+    bottom: 95px;
+    left: -19px;
+    width: 900px;
+    height: 522px;
+    border-radius: 50%;
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+    background-color: #ffffff;
   }
 }
 /*# sourceMappingURL=style.css.map */

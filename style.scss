@@ -28,6 +28,12 @@ $cPurple: #757085;
       text-decoration: none;
       list-style: none;
       color: $cWhite;
+
+      &:hover{
+        transform: scale(1.2);
+        transition: ease-in 0.3s;
+        border-bottom: 2px solid $cWhite;
+      }
     }
 
     & .purple--nav{
@@ -35,7 +41,17 @@ $cPurple: #757085;
       text-decoration: none;
       list-style: none;
       color: $cPurple;
+
+      &:hover{
+        transform: scale(1.2);
+        transition: ease-in 0.3s;
+        border-bottom: 2px solid $cPurple;
+      }
     }
+  }
+
+  body{
+    height: 100%;
   }
 
   .bg-color{
@@ -92,18 +108,300 @@ $cPurple: #757085;
       left: 120px;
       font-size: 28px;
 
+      & .name-bg{
+        background-color: #c3bbde;
+        opacity: 0.5;
+      }
+
       & .big{
         font-size: 38px;
       }
     }
   }
 
+  .intro{
+    position: absolute;
+    top: 300px;
+    right: 0;
+    width: 40%;
+    display: block;
+    margin: 50px;
+    z-index: 99;
+
+
+    &-icon{
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      
+      & .google{
+        width: 50px;
+        height: 50px;
+      }
+
+      & .discord{
+        width: 50px;
+        height: 50px;
+      }
+
+      & .linkedin{
+        width: 50px;
+        height: 50px;
+      }
+
+      & .github{
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+    &-text{
+      color: $cPurple;
+      font-size: 28px;
+    }
+  }
+
+  .aboutMe{
+    width: 100%;
+    position: relative;
+    bottom: 110vh;
+
+    & .bg-color2{
+      position: relative;
+      bottom: 200px;
+      margin: 0;
+
+
+      & .circle3{
+        position: absolute;
+        left: -100px;
+        width: 532px;
+        height: 832px;
+        background-color: $cPurple;
+        border-radius: 50%;
+        transform: rotate(58deg);
+        z-index: -99;
+      }
+
+      & .circle4{
+        position: absolute;
+        top: 180px;
+        left: 250px;
+        width: 322px;
+        height: 605px;
+        margin: 0;
+        background-color: #ffffff;
+        border-radius: 50%;
+        transform: rotate(39.5deg);
+        z-index: -99;
+      } 
+
+    }
+
+    & h2{
+      position: relative;
+      top: 100px;
+      margin: 0 450px;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 50px;
+      border-bottom: 3px solid $cPurple;
+    }
+
+    & .about{
+      margin-top: 200px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+
+      & img{
+        width: 400px;
+        height: 400px;
+      }
+
+      & p{
+        color: $cPurple;
+        font-size: 24px;
+        width: 50%;
+      }
+    }
+
+    & .whatlike{
+      margin-top: 100px;
+      width: 90%;
+      display: flex;
+      gap: 50px;
+      flex-direction: row-reverse;
+      justify-content: center;
+      
+      & img{
+        width: 400px;
+        height: 400px;
+      }
+
+      &-contents{
+
+        & h3{
+          font-size: 40px;
+          font-weight: lighter;
+          border-bottom: 1px solid $cPurple;
+          width: 550px;
+          padding-left: 200px;
+        }
+
+        & p{
+        color: $cPurple;
+        font-size: 24px;
+        margin: 80px 150px;
+      }
+      }
+      
+    }
+
+    & .skills{
+      position: relative;
+      top: 50px;
+      width: 100%;
+      height: 430px;
+      background-color: $cPurple;
+
+      & h3{
+        padding-top: 30px;
+        color: $cWhite;
+        font-size: 40px;
+        font-weight: lighter;
+        border-bottom: 1px solid $cWhite;
+        width: 550px;
+        padding-left: 200px;
+      }
+
+      &-imgs{
+        margin: 0% 25%;
+        width: 50%;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        & .git-hub{
+          width: 100px;
+          height: 100px;
+        }
+
+        & .nextjs{
+          padding-top: 15px;
+        }
+      }
+    }
+
+  }
+
+  .portfolio{
+    position: relative;
+    bottom: 90vh;
+    height: 100vh;
+
+    & h2{
+      margin: 0 450px;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 50px;
+      border-bottom: 3px solid $cPurple;
+    }
+  }
+
+  .resume{
+    position: relative;
+    bottom: 90vh;
+    height: 100vh;
+
+    & h2{
+      margin: 0 450px;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 50px;
+      border-bottom: 3px solid $cPurple;
+    }
+  }
+
+  .contacts{
+    position: relative;
+    height: 60vh;
+
+    & h2{
+      margin: 0 450px;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 50px;
+      border-bottom: 3px solid $cPurple;
+    }
+
+    &-icon{
+      margin: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      
+      &-google{
+        width: 50px;
+        height: 50px;
+      }
+
+      &-discord{
+        width: 50px;
+        height: 50px;
+      }
+
+      &-linkedin{
+        width: 50px;
+        height: 50px;
+      }
+
+      &-github{
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+  }
 
 
 
 
+footer{
+  position: relative;
+
+    & .square2{
+      position: relative;
+      width: 100%;
+      height: 420px;
+      background-color: $cPurple;
+      z-index: -99;
+    }
 
 
+    & .circle5{
+      position: absolute;
+      bottom: 300px;
+      right: 0px;
+      width: 600px;
+      height: 373px;
+      border-radius: 50% 50% 0% 50%;
+      background-color: $cPurple;
+      overflow: hidden;
+    }
 
+    & .circle6{
+      position: absolute;
+      bottom: 95px;
+      left: -19px;
+      width: 900px;
+      height: 522px;
+      border-radius: 50%;
+      transform: rotate(12deg);
+      background-color: #ffffff;
+    }
+  }
 
 }
