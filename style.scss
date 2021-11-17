@@ -1,0 +1,109 @@
+$cWhite: #dddddd;
+$cBlack: #000000;
+$cPurple: #757085;
+
+*{
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Rasa', serif;
+}
+
+/*====================================== mobile =============================================*/
+
+
+/*====================================== desktop =============================================*/
+@media screen and (min-width: 40rem){
+  
+  .top-nav{
+
+    & ul{
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+    }
+      
+    
+    & .white--nav{
+      font-size: 24px;
+      text-decoration: none;
+      list-style: none;
+      color: $cWhite;
+    }
+
+    & .purple--nav{
+      font-size: 24px;
+      text-decoration: none;
+      list-style: none;
+      color: $cPurple;
+    }
+  }
+
+  .bg-color{
+
+    & .square1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 720px;
+      height: 900px;
+      background-color: $cPurple;
+      z-index: -99;
+    }
+
+    & .circle1{
+      position: relative;
+      bottom: 400px;
+      left: 540px;
+      width: 352px;
+      height: 807px;
+      background-color: $cPurple;
+      border-radius: 50%;
+      transform: rotate(9deg);
+      z-index: -99;
+    }
+
+    & .circle2{
+      position: relative;
+      bottom: 440px;
+      left: 540px;
+      width: 352px;
+      height: 807px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: rotate(9deg);
+      z-index: -99;
+
+    }
+  }
+
+  .title{
+    position: absolute;
+    top: 180px;
+    margin: 50px;
+
+    & h1{
+      color: $cWhite;
+      font-size: 80px;
+    }
+
+    & p{
+      position: absolute;
+      top: 130px;
+      left: 120px;
+      font-size: 28px;
+
+      & .big{
+        font-size: 38px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

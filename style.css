@@ -1,0 +1,84 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Rasa', serif;
+}
+
+/*====================================== mobile =============================================*/
+/*====================================== desktop =============================================*/
+@media screen and (min-width: 40rem) {
+  .top-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 120px;
+  }
+  .top-nav .white--nav {
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    color: #dddddd;
+  }
+  .top-nav .purple--nav {
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    color: #757085;
+  }
+  .bg-color .square1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 720px;
+    height: 900px;
+    background-color: #757085;
+    z-index: -99;
+  }
+  .bg-color .circle1 {
+    position: relative;
+    bottom: 400px;
+    left: 540px;
+    width: 352px;
+    height: 807px;
+    background-color: #757085;
+    border-radius: 50%;
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+    z-index: -99;
+  }
+  .bg-color .circle2 {
+    position: relative;
+    bottom: 440px;
+    left: 540px;
+    width: 352px;
+    height: 807px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+    z-index: -99;
+  }
+  .title {
+    position: absolute;
+    top: 180px;
+    margin: 50px;
+  }
+  .title h1 {
+    color: #dddddd;
+    font-size: 80px;
+  }
+  .title p {
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    font-size: 28px;
+  }
+  .title p .big {
+    font-size: 38px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
