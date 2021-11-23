@@ -6,6 +6,371 @@
 }
 
 /*====================================== mobile =============================================*/
+@media screen and (max-width: 40rem) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff94;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    z-index: 97;
+  }
+  .top-nav {
+    position: fixed;
+    top: 0;
+    left: -150px;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 600px solid transparent;
+    border-left: 525px solid #7570857e;
+    z-index: 98;
+  }
+  .top-nav .close-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    z-index: 99;
+  }
+  .top-nav .close-btn img {
+    width: 20px;
+    height: 20px;
+  }
+  .top-nav ul {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    display: block;
+    z-index: 99;
+  }
+  .top-nav ul li {
+    margin: 20px;
+  }
+  .top-nav .white--nav {
+    font-size: 28px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .top-nav .white--nav_jump {
+    text-decoration: none;
+    outline: none;
+    color: #dddddd;
+  }
+  .top-nav .white--nav:hover {
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    border-bottom: 2px solid #dddddd;
+  }
+  .top-nav .purple--nav {
+    font-size: 28px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .top-nav .purple--nav_jump {
+    text-decoration: none;
+    outline: none;
+    color: #dddddd;
+  }
+  .top-nav .purple--nav:hover {
+    -webkit-transition: ease-in 0.3s;
+    transition: ease-in 0.3s;
+    border-bottom: 2px solid #dddddd;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  body {
+    margin: 0;
+    width: 375px;
+    height: 100%;
+  }
+  .open-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+    height: 70px;
+    background-color: #757085;
+    z-index: 95;
+  }
+  .open-btn img {
+    width: 30px;
+    height: 20px;
+  }
+  .bg-color {
+    width: 375px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .bg-color .square1 {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 600px solid transparent;
+    border-left: 525px solid #757085;
+    z-index: -99;
+  }
+  .bg-color .circle1 {
+    position: absolute;
+    visibility: hidden;
+  }
+  .bg-color .circle2 {
+    position: absolute;
+    visibility: hidden;
+  }
+  .title {
+    position: absolute;
+    top: 100px;
+    margin: 50px;
+  }
+  .title h1 {
+    color: #dddddd;
+    font-size: 34px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .title p {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    left: 20px;
+    width: 214px;
+    font-size: 20px;
+  }
+  .title p .name-bg {
+    background-color: #c3bbde;
+    opacity: 0.5;
+  }
+  .title p .big {
+    font-size: 24px;
+  }
+  .intro {
+    position: relative;
+    bottom: 300px;
+    right: 0px;
+    width: 80%;
+    margin: 10%;
+    z-index: 5;
+  }
+  .intro-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .intro-text {
+    visibility: hidden;
+  }
+  .intro .arrows {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    -webkit-animation: arrowmove 2s ease-in-out infinite;
+            animation: arrowmove 2s ease-in-out infinite;
+  }
+  @-webkit-keyframes arrowmove {
+    0% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 60px;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+  @keyframes arrowmove {
+    0% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 60px;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+  .bg-color2 {
+    width: 375px;
+    overflow: hidden;
+  }
+  .bg-color2 .circle3 {
+    visibility: hidden;
+  }
+  .bg-color2 .circle4 {
+    visibility: hidden;
+  }
+  #aboutMe {
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    display: block;
+  }
+  #aboutMe h2 {
+    width: 100%;
+    font-size: 34px;
+    font-weight: lighter;
+    text-align: center;
+    border-bottom: 2px solid #757085;
+  }
+  #aboutMe .about {
+    margin: 40px;
+    text-align: center;
+  }
+  #aboutMe .about img {
+    width: 200px;
+    height: 200px;
+  }
+  #aboutMe .about p {
+    font-size: 18px;
+    text-align: start;
+  }
+  #aboutMe .whatlike {
+    display: block;
+    text-align: center;
+  }
+  #aboutMe .whatlike h3 {
+    text-align: start;
+    padding: 0 50px;
+    width: 70%;
+    border-bottom: 1px solid #757085;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  #aboutMe .whatlike img {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  #aboutMe .whatlike p {
+    text-align: start;
+    margin: 40px;
+    font-size: 18px;
+  }
+  #aboutMe .skills {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #757085;
+    display: block;
+    text-align: center;
+  }
+  #aboutMe .skills h3 {
+    width: 70%;
+    padding: 30px 50px 0;
+    font-size: 24px;
+    border-bottom: 1px solid #dddddd;
+    text-align: start;
+    color: #dddddd;
+  }
+  #aboutMe .skills-imgs {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  #aboutMe .skills-imgs2 {
+    position: absolute;
+    top: 80px;
+    margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #portfolio {
+    position: relative;
+  }
+  #portfolio h2 {
+    text-align: center;
+    font-size: 34px;
+    width: 100%;
+    border-bottom: 2px solid #757085;
+  }
+  #resume {
+    position: relative;
+  }
+  #resume h2 {
+    text-align: center;
+    font-size: 34px;
+    width: 100%;
+    border-bottom: 2px solid #757085;
+  }
+  #contacts {
+    position: relative;
+  }
+  #contacts h2 {
+    text-align: center;
+    font-size: 34px;
+    width: 100%;
+    border-bottom: 2px solid #757085;
+  }
+  #contacts .contacts-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    height: 300px;
+    width: 375px;
+    overflow: hidden;
+  }
+  footer .copyright {
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    color: #dddddd;
+    width: 100%;
+    margin: 0 6%;
+  }
+  footer .circle5 {
+    position: absolute;
+    bottom: 30px;
+    width: 230px;
+    height: 134px;
+    border-radius: 50%;
+    -webkit-transform: rotate(13.5deg);
+            transform: rotate(13.5deg);
+    background-color: #ffffff;
+    z-index: -99;
+  }
+  footer .circle6 {
+    position: absolute;
+    bottom: 55px;
+    width: 164px;
+    height: 218px;
+    background-color: #757085;
+    border-radius: 50%;
+    right: 0;
+    -webkit-transform: rotate(-82.5deg);
+            transform: rotate(-82.5deg);
+    z-index: -99;
+  }
+  footer .square2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-color: #757085;
+    z-index: -100;
+  }
+}
+
 /*====================================== desktop =============================================*/
 @media screen and (min-width: 40rem) {
   .top-nav ul {
@@ -23,6 +388,11 @@
     list-style: none;
     color: #dddddd;
   }
+  .top-nav .white--nav_jump {
+    text-decoration: none;
+    outline: none;
+    color: #dddddd;
+  }
   .top-nav .white--nav:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -34,6 +404,10 @@
     font-size: 24px;
     text-decoration: none;
     list-style: none;
+  }
+  .top-nav .purple--nav_jump {
+    text-decoration: none;
+    outline: none;
     color: #757085;
   }
   .top-nav .purple--nav:hover {
@@ -139,17 +513,17 @@
     color: #757085;
     font-size: 28px;
   }
-  .aboutMe {
+  #aboutMe {
     width: 100%;
     position: relative;
     bottom: 110vh;
   }
-  .aboutMe .bg-color2 {
+  #aboutMe .bg-color2 {
     position: relative;
     bottom: 200px;
     margin: 0;
   }
-  .aboutMe .bg-color2 .circle3 {
+  #aboutMe .bg-color2 .circle3 {
     position: absolute;
     left: -100px;
     width: 532px;
@@ -160,7 +534,7 @@
             transform: rotate(58deg);
     z-index: -99;
   }
-  .aboutMe .bg-color2 .circle4 {
+  #aboutMe .bg-color2 .circle4 {
     position: absolute;
     top: 180px;
     left: 250px;
@@ -173,7 +547,7 @@
             transform: rotate(39.5deg);
     z-index: -99;
   }
-  .aboutMe h2 {
+  #aboutMe h2 {
     position: relative;
     top: 100px;
     margin: 0 450px;
@@ -182,7 +556,7 @@
     font-size: 50px;
     border-bottom: 3px solid #757085;
   }
-  .aboutMe .about {
+  #aboutMe .about {
     margin-top: 200px;
     width: 100%;
     display: -webkit-box;
@@ -193,16 +567,16 @@
             justify-content: center;
     gap: 50px;
   }
-  .aboutMe .about img {
+  #aboutMe .about img {
     width: 400px;
     height: 400px;
   }
-  .aboutMe .about p {
+  #aboutMe .about p {
     color: #757085;
     font-size: 24px;
     width: 50%;
   }
-  .aboutMe .whatlike {
+  #aboutMe .whatlike {
     margin-top: 100px;
     width: 90%;
     display: -webkit-box;
@@ -217,30 +591,30 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .aboutMe .whatlike img {
+  #aboutMe .whatlike img {
     width: 400px;
     height: 400px;
   }
-  .aboutMe .whatlike-contents h3 {
+  #aboutMe .whatlike-contents h3 {
     font-size: 40px;
     font-weight: lighter;
     border-bottom: 1px solid #757085;
     width: 550px;
     padding-left: 200px;
   }
-  .aboutMe .whatlike-contents p {
+  #aboutMe .whatlike-contents p {
     color: #757085;
     font-size: 24px;
     margin: 80px 150px;
   }
-  .aboutMe .skills {
+  #aboutMe .skills {
     position: relative;
     top: 50px;
     width: 100%;
     height: 430px;
     background-color: #757085;
   }
-  .aboutMe .skills h3 {
+  #aboutMe .skills h3 {
     padding-top: 30px;
     color: #dddddd;
     font-size: 40px;
@@ -249,7 +623,7 @@
     width: 550px;
     padding-left: 200px;
   }
-  .aboutMe .skills-imgs {
+  #aboutMe .skills-imgs {
     margin: 0% 25%;
     width: 50%;
     display: -webkit-box;
@@ -259,49 +633,49 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .aboutMe .skills-imgs .git-hub {
+  #aboutMe .skills-imgs .git-hub {
     width: 100px;
     height: 100px;
   }
-  .aboutMe .skills-imgs .nextjs {
+  #aboutMe .skills-imgs .nextjs {
     padding-top: 15px;
   }
-  .portfolio {
+  #portfolio {
     position: relative;
     bottom: 90vh;
     height: 100vh;
   }
-  .portfolio h2 {
+  #portfolio h2 {
     margin: 0 450px;
     text-align: center;
     font-weight: lighter;
     font-size: 50px;
     border-bottom: 3px solid #757085;
   }
-  .resume {
+  #resume {
     position: relative;
     bottom: 90vh;
     height: 100vh;
   }
-  .resume h2 {
+  #resume h2 {
     margin: 0 450px;
     text-align: center;
     font-weight: lighter;
     font-size: 50px;
     border-bottom: 3px solid #757085;
   }
-  .contacts {
+  #contacts {
     position: relative;
     height: 60vh;
   }
-  .contacts h2 {
+  #contacts h2 {
     margin: 0 450px;
     text-align: center;
     font-weight: lighter;
     font-size: 50px;
     border-bottom: 3px solid #757085;
   }
-  .contacts-icon {
+  #contacts .contacts-icon {
     margin: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -311,24 +685,32 @@
             justify-content: center;
     gap: 60px;
   }
-  .contacts-icon-google {
+  #contacts .contacts-icon-google {
     width: 50px;
     height: 50px;
   }
-  .contacts-icon-discord {
+  #contacts .contacts-icon-discord {
     width: 50px;
     height: 50px;
   }
-  .contacts-icon-linkedin {
+  #contacts .contacts-icon-linkedin {
     width: 50px;
     height: 50px;
   }
-  .contacts-icon-github {
+  #contacts .contacts-icon-github {
     width: 50px;
     height: 50px;
   }
   footer {
     position: relative;
+  }
+  footer .copyright {
+    color: #dddddd;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
   footer .square2 {
     position: relative;

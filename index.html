@@ -13,22 +13,31 @@
   <title>ShihoNagano.Dev</title>
 </head>
 <body>
+  <div id="global-container">
   <header>
-    <nav class="top-nav">
+    <nav class="top-nav hidden">
+      <div class="close-btn">
+        <img src="./images/close-btn.png" alt="close">
+      </div>
       <ul>
-        <li class="white--nav">About Me</li>
-        <li class="white--nav">Portfolio</li>
-        <li class="white--nav">Résumé</li>
-        <li class="purple--nav">Contacts</li>
+        <li class="white--nav"> <a href="#aboutMe" class="white--nav_jump">About Me</a></li>
+        <li class="white--nav"><a href="#portfolio" class="white--nav_jump">Portfolio</a></li>
+        <li class="white--nav"><a href="#resume" class="white--nav_jump">Résumé</a></li>
+        <li class="purple--nav"><a href="#contacts" class="purple--nav_jump">Contacts</a></li>
       </ul>
     </nav><!--.top-nav-->
   </header>
   <main>
+    <div class="container hidden"></div>
     <div class="bg-color">
       <div class="square1"></div>
       <div class="circle1"></div>
       <div class="circle2"></div>
     </div><!--bg-color-->
+
+    <div class="open-btn">
+      <img src="./images/open-btn.png" alt="open">
+    </div>
     
     <div class="title">
       <h1>Front End Developer</h1>
@@ -74,7 +83,7 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
           </svg>
-        </div><!--.git-hub-->
+        </div><!--.github-->
 
       </div><!--.intro-icon-->
       <div class="intro-text">
@@ -82,14 +91,22 @@
           You can know how much I have an ambitious and <br/>I am motivated to learn new things.<br/>
           I am sure when you finish to look my portfolio,you are going to be interested in me.</p>
       </div><!--.intro-text-->
+
+      <div class="arrows">
+        <img src="./images/arrows.png" alt="arrows">
+      </div>
+
     </div><!--.intro-->
 
+    
 
-    <div class="aboutMe">
-      <div class="bg-color2">
-        <div class="circle3"></div>
-        <div class="circle4"></div>
-      </div><!--.bg-color2-->
+    <div class="bg-color2">
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+    </div><!--.bg-color2-->
+
+
+    <div id="aboutMe">
       
       <h2>About Me</h2>
 
@@ -105,10 +122,11 @@
       </div><!--.about-->
     
       <div class="whatlike">
-        <img src="./images/what-is-she-like-img.jpg" alt="whatlike">
 
-      <div class="whatlike-contents">
         <h3>What is she like?</h3>
+        
+      <div class="whatlike-contents">
+        <img src="./images/what-is-she-like-img.jpg" alt="whatlike">
         <p>She is laugher, smile a lot. But it’s not only she is bright, but she also like to make people laugh.
           She is also artistic and she like to create something from a scratch.</p>
       </div><!--.whatlike-contents-->
@@ -161,26 +179,69 @@
 
         </div><!--.skills-imgs-->
 
+        <div class="skills-imgs2">
+          <div class="html">
+            <img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png"/>
+          </div>
+
+          <div class="css">
+            <img src="https://img.icons8.com/ios-filled/50/000000/css3.png"/>
+          </div>
+
+          <div class="sass">
+            <img src="https://img.icons8.com/ios-filled/50/000000/sass-avatar.png"/>
+          </div>
+
+          <div class="jquery">
+            <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>
+          </div>
+
+          <div class="git-hub">
+            <img src="https://img.icons8.com/material-outlined/48/000000/github.png"/>
+          </div>
+
+          <div class="javascript">
+            <img src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png"/>
+          </div>
+
+          <div class="react">
+            <img src="https://img.icons8.com/ios-filled/50/000000/react-native.png"/>
+          </div>
+
+          <div class="redux">
+            <img src="https://img.icons8.com/ios-filled/50/000000/redux.png"/>
+          </div>
+
+          <div class="typescript">
+            <img src="https://img.icons8.com/ios-filled/50/000000/typescript.png"/>
+          </div>
+
+          <div class="nextjs">
+            <img src="./images/nextjs.png" alt="nextjs" width="50px">
+          </div>
+
+        </div><!--.skills-imgs2-->
+
       </div><!--.skills-->
 
       
-    </div><!--.aboutMe-->
+    </div><!--#aboutMe-->
 
 
-    <div class="portfolio">
+    <div id="portfolio">
       <h2>Portfolio</h2>
 
 
     </div><!--.portfolio-->
 
 
-    <div class="resume">
+    <div id="resume">
       <h2>Résumé</h2>
 
     </div><!--.Resume-->
 
 
-    <div class="contacts">
+    <div id="contacts">
       <h2>Contacts</h2>
 
       <div class="contacts-icon">
@@ -230,12 +291,13 @@
 
   <footer>
 
+      <div class="copyright">Copyright ©2021.Shiho-Nagano.dev All Rights Reserved.</div>
       <div class="circle5"></div>
       <div class="circle6"></div>
       <div class="square2"></div>
 
   </footer>
-
+    </div><!--/#global-container-->
   <script src="main.js"></script>
 </body>
 </html>
