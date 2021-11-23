@@ -17,9 +17,9 @@ $cPurple: #757085;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #ffffff94;
+    background-color: #757085c9;
     backdrop-filter: blur(4px);
-    z-index: 97;
+    z-index: 96;
   }
 
   .top-nav{
@@ -30,7 +30,7 @@ $cPurple: #757085;
     width: 100%;
     height: 100vh;
     border-bottom: 600px solid transparent;
-    border-left: 525px solid #7570857e;
+    border-left: 525px solid #ddddddcb;
     z-index: 98;
 
     & .close-btn{
@@ -149,8 +149,9 @@ $cPurple: #757085;
 
   .title{
     position: absolute;
-    top: 100px;
-    margin: 50px;
+    top: 150px;
+    width: 100%;
+    margin: 0 auto;
 
     & h1{
       color: $cWhite;
@@ -160,11 +161,7 @@ $cPurple: #757085;
     }
 
     & p{
-      position: absolute;
-      left: 0;
-      top: 80px;
-      left: 20px;
-      width: 214px;
+      text-align: center;
       font-size: 20px;
 
       & .name-bg{
@@ -180,10 +177,10 @@ $cPurple: #757085;
 
   .intro{
     position: relative;
-    bottom: 300px;
-    right: 0px;
-    width: 80%;
-    margin: 10%;
+    display: block;
+    text-align: center;
+    bottom: 250px;
+    width: 100%;
     z-index: 5;
 
 
@@ -416,8 +413,16 @@ $cPurple: #757085;
 
 /*====================================== desktop =============================================*/
 @media screen and (min-width: 40rem){
+
+  .open-btn{
+    visibility: hidden;
+  }
   
   .top-nav{
+
+    & .close-btn{
+      visibility: hidden;
+    }
 
     & ul{
       display: flex;
@@ -462,6 +467,10 @@ $cPurple: #757085;
         border-bottom: 2px solid $cPurple;
       }
     }
+  }
+
+  .arrows{
+    visibility: hidden;
   }
 
   body{
@@ -576,13 +585,8 @@ $cPurple: #757085;
     }
   }
 
-  #aboutMe{
-    width: 100%;
-    position: relative;
-    bottom: 110vh;
-
-    & .bg-color2{
-      position: relative;
+  .bg-color2{
+      position: absolute;
       bottom: 200px;
       margin: 0;
 
@@ -612,6 +616,11 @@ $cPurple: #757085;
       } 
 
     }
+
+  #aboutMe{
+    width: 100%;
+    position: relative;
+    bottom: 110vh;
 
     & h2{
       position: relative;
@@ -645,25 +654,27 @@ $cPurple: #757085;
     & .whatlike{
       margin-top: 100px;
       width: 90%;
-      display: flex;
-      gap: 50px;
-      flex-direction: row-reverse;
-      justify-content: center;
       
-      & img{
-        width: 400px;
-        height: 400px;
-      }
+      
 
-      &-contents{
-
-        & h3{
+      & h3{
           font-size: 40px;
           font-weight: lighter;
           border-bottom: 1px solid $cPurple;
           width: 550px;
           padding-left: 200px;
         }
+      
+      &-contents{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        & img{
+        width: 400px;
+        height: 400px;
+      }
 
         & p{
         color: $cPurple;
@@ -689,6 +700,10 @@ $cPurple: #757085;
         border-bottom: 1px solid $cWhite;
         width: 550px;
         padding-left: 200px;
+      }
+
+      &-imgs2{
+        visibility: hidden;
       }
 
       &-imgs{
